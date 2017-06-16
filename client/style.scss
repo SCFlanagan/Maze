@@ -1,0 +1,89 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    background: coral;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#container {
+    height: 24.3rem;
+    width: 32.3rem;
+    position: absolute;
+    top: 9.5rem;
+    left: 24.5rem;
+}
+
+#ball {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100px;
+    background: cornflowerblue;
+    position: absolute;
+    top: 9rem;
+    /*left: -3rem;*/
+    left: 0;
+    z-index: 5;
+}
+
+#maze {
+    height: 24rem;
+    width: 32rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    z-index: 2;
+
+}
+
+#outer {
+    background: white;
+    height: 24.3rem;
+    width: 32.3rem;
+    
+    z-index: 0;
+}
+
+.blackout {
+    background: black;
+    position: absolute;
+    z-index: 1;
+    height: 4rem;
+    width: 4rem;
+    left: 0;
+    top: 8rem;
+}
+
+#second {
+    top: 4rem !important;
+    left: 28.4rem !important;
+}
+
+.square {   
+    height: 4rem;
+    width: 4rem;
+    display: inline-block;
+    margin: 0;
+}
+
+$border: 1px solid white;
+
+#s1, #s2, #s3, #s4, #s5, #s6, #s9, #s10, #s11, #s12, #s13, #s18, #s27, #s28, #s34, #s35, #s37, #s38 {
+    border-bottom: $border;
+}
+
+#s1, #s14, #s19, #s21, #s22, #s24, #s25, #s26, #s29, #s32, #s36, #s40, #s50 {
+    border-right: $border;
+}
+
+#s28, #s30 {
+    border-bottom: $border;
+    border-right: $border;
+}
